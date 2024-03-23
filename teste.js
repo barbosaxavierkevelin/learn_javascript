@@ -71,4 +71,43 @@ let pessoa = {
     idade: 26,
     hobbies: ["DevWeb", "programar"]
 }
-console.log(pessoa)
+console.log(pessoa);
+
+
+
+//desafio
+//////// que dia da semana é hoje?
+//let diaDaSemana = prompt("Olá! Que dia da semana é hoje?");
+
+//if (diaDaSemana == "sabado") {
+  //  alert("Bom final de semana!");
+//} else {
+  //  if (diaDaSemana == "domingo"); {
+   // alert("Bom final de semana!");
+//} else {
+  //  alert("Bom dia e boa semana!");
+//}
+// } 
+
+/////////o número é positivo ou negativo?
+
+//let numero = prompt("Tente me enganar! digite um número positivo ou negativo e eu lhe direi!");
+
+//if (numero < 0) {
+ //   alert(numero + ` é um número negativo`);
+//} else {
+  //  alert(numero + ` é um número positivo!`);
+//}
+
+/////////boas vindas
+
+let nome = prompt("Se identifique:");
+
+alert(`Olá ${nome}, seja bem-vindo!`);
+
+// contador
+let numero = prompt("Digite um número de 0 a 10");
+let contador = 1;
+while (contador <= numero) {
+    alert(contador++)
+}
