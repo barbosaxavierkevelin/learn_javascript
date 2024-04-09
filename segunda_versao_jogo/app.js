@@ -4,6 +4,9 @@
 
 /*os arquivos devem estar no mesmo diretório. e o arquivo app.js deve estar sendo chamdo no final do html : <script src="app.js" defer></script> */
 
+//CHAMANDO O ELEMENTO COM O NÚMERO ALEATÓRIO
+let numeroSecreto = gerarNumeroAleatorio();
+
 /*indicando qual elemento do html quero alterar no js: */
 /*tag h1 */
 /*let titulo = document.querySelector('h1');
@@ -31,6 +34,14 @@ exibirTextoNaTela('p', 'Escolha um número de 1 a 10');
 
 /**CRIANDO FUNÇÕES */
 /**Ela deve ter o mesmo nome no js e no html */
+// linkar o imput do usuário com o valor aleatório gerado
 function verificarChute() {
-    console.log('o botão foi clicado')
+    let chute = document.querySelector('input').value;
+    console.log(chute == numeroSecreto)
 }
+
+// FUNÇÃO PARA GERAR O NÚMERO ALEATÓRIO
+function gerarNumeroAleatorio() {
+    return parseInt(Math.random() * 10 + 1);
+}
+

@@ -1,6 +1,6 @@
 
 
-console.log("Olá, mundo!")
+/*console.log("Olá, mundo!")
 
 function soma(x, y) {
     console.log(x + y)
@@ -110,4 +110,10 @@ let numero = prompt("Digite um número de 0 a 10");
 let contador = 1;
 while (contador <= numero) {
     alert(contador++)
+}*/
+
+
+function olaMundo(nome) {
+    nome = prompt("Qual seu nome?");
+    alert(`Olá , ${nome}!`);
 }
