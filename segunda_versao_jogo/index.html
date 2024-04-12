@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--script que lê e fala textos que tiverem numa tela-->
     <script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+    <!---->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"
@@ -26,7 +28,7 @@
                 <div class="chute container__botoes">
                     <!--usando uma função em js para reconhecer o click no botão e realizara a tarefa de exibir o resultado do jogo-->
                     <button onclick="verificarChute()" class="container__botao">Chutar</button>
-                    <button onclick="" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
+                    <button onclick="reiniciarJogo()" id="reiniciar" class="container__botao" disabled>Novo jogo</button>
                 </div>
             </div>
             <img src="./img/ia.png" alt="Uma pessoa olhando para a esquerda" class="container__imagem-pessoa" />
